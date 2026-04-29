@@ -1,0 +1,132 @@
+[
+  {
+    "id": "junior-suite",
+    "image": "/assets/Stanza%201%20-%20Foto-1.jpg",
+    "images": [
+      "/assets/Stanza%201%20-%20Foto-1.jpg",
+      "/assets/Stanza%201%20-%20Foto-4.jpg",
+      "/assets/Stanza%201%20-%20Foto-5.jpg",
+      "/assets/Stanza%201%20-%20Foto-6.jpg",
+      "/assets/Stanza%201%20-%20Foto-7.jpg",
+      "/assets/Stanza%201%20-%20Foto-11.jpg"
+    ],
+    "translations": {
+      "it": {
+        "name": "JUNIOR SUITE",
+        "location": "Bassano del Grappa",
+        "description": "Un rifugio di luce e storia, con affreschi originali e artigianato italiano su misura in un ambiente intimo. Perfetto per chi cerca un'autentica esperienza di Palazzo con il comfort moderno.",
+        "capacity": "2 Adulti",
+        "amenities": [
+          "Wi-Fi ad alta velocità gratuito",
+          "Aria condizionata",
+          "Minibar",
+          "Cassaforte in camera",
+          "TV a schermo piatto",
+          "Macchina da caffè Nespresso",
+          "Bagno lussuoso",
+          "Asciugacapelli",
+          "Prodotti da bagno bio"
+        ]
+      },
+      "en": {
+        "name": "JUNIOR SUITE",
+        "location": "Bassano del Grappa",
+        "description": "A sanctuary of light and history, featuring original frescoes and bespoke Italian craftsmanship in an intimate setting. Perfect for those seeking an authentic Palazzo experience with modern comfort.",
+        "capacity": "2 Adults",
+        "amenities": [
+          "Free high-speed WiFi",
+          "Air conditioning",
+          "Mini-bar",
+          "In-room safe",
+          "Flat-screen TV",
+          "Nespresso coffee machine",
+          "Luxury bathroom",
+          "Hair dryer",
+          "Organic bath amenities"
+        ]
+      },
+      "de": {
+        "name": "JUNIOR SUITE",
+        "location": "Bassano del Grappa",
+        "description": "Ein Refugium aus Licht und Geschichte, mit originalen Fresken und maßgeschneiderter italienischer Handwerkskunst in einem intimen Rahmen. Perfekt für alle, die ein authentisches Palazzo-Erlebnis mit modernem Komfort suchen.",
+        "capacity": "2 Erwachsene",
+        "amenities": [
+          "Kostenloses Highspeed-WLAN",
+          "Klimaanlage",
+          "Minibar",
+          "Zimmersafe",
+          "Flachbild-TV",
+          "Nespresso-Kaffeemaschine",
+          "Luxuriöses Badezimmer",
+          "Haartrockner",
+          "Bio-Pflegeprodukte"
+        ]
+      }
+    }
+  },
+  {
+    "id": "suite-deluxe",
+    "image": "/assets/Stanza%202%20-%20Foto-1.jpg",
+    "images": [
+      "/assets/Stanza%202%20-%20Foto-1.jpg",
+      "/assets/Stanza%202%20-%20Foto-2.jpg",
+      "/assets/Stanza%202%20-%20Foto-3.jpg",
+      "/assets/Stanza%202%20-%20Foto-7.jpg",
+      "/assets/Stanza%202%20-%20Foto-11.jpg",
+      "/assets/Stanza%202%20-%20Foto-12.jpg"
+    ],
+    "translations": {
+      "it": {
+        "name": "SUITE DELUXE",
+        "location": "Bassano del Grappa",
+        "description": "Eleganza senza pari tra mura storiche, con pavimenti in terrazzo veneziano e vista panoramica sul centro storico. La nostra offerta più grandiosa per un soggiorno indimenticabile nel cuore di Bassano.",
+        "capacity": "2 Adulti",
+        "amenities": [
+          "Wi-Fi ad alta velocità gratuito",
+          "Aria condizionata",
+          "Minibar",
+          "Cassaforte in camera",
+          "TV a schermo piatto",
+          "Macchina da caffè Nespresso",
+          "Bagno lussuoso",
+          "Asciugacapelli",
+          "Prodotti da bagno bio"
+        ]
+      },
+      "en": {
+        "name": "SUITE DELUXE",
+        "location": "Bassano del Grappa",
+        "description": "Unparalleled elegance spanning historic walls, with Venetian terrazzo floors and panoramic views of the historic center. Our grandest offering for an unforgettable stay in the heart of Bassano.",
+        "capacity": "2 Adults",
+        "amenities": [
+          "Free high-speed WiFi",
+          "Air conditioning",
+          "Mini-bar",
+          "In-room safe",
+          "Flat-screen TV",
+          "Nespresso coffee machine",
+          "Luxury bathroom",
+          "Hair dryer",
+          "Organic bath amenities"
+        ]
+      },
+      "de": {
+        "name": "SUITE DELUXE",
+        "location": "Bassano del Grappa",
+        "description": "Unvergleichliche Eleganz in historischen Mauern, mit venezianischen Terrazzoböden und Panoramablick auf das historische Zentrum. Unser prachtvollstes Angebot für einen unvergesslichen Aufenthalt im Herzen von Bassano.",
+        "capacity": "2 Erwachsene",
+        "amenities": [
+          "Kostenloses Highspeed-WLAN",
+          "Klimaanlage",
+          "Minibar",
+          "Zimmersafe",
+          "Flachbild-TV",
+          "Nespresso-Kaffeemaschine",
+          "Luxuriöses Badezimmer",
+          "Haartrockner",
+          "Bio-Pflegeprodukte"
+        ]
+      }
+    }
+  }
+]

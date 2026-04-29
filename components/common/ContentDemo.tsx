@@ -13,21 +13,21 @@ export default function ContentDemo() {
   return (
     <div className="p-8 max-w-2xl mx-auto space-y-6">
       <div className="flex gap-4">
-        <button 
+        <button
           onClick={() => setLanguage("en")}
-          className={`px-4 py-2 rounded ${language === "en" ? "bg-primary text-white" : "bg-gray-200"}`}
+          className={`px-4 py-2 rounded ${language === "en" ? "bg-primary text-background" : "bg-gray-200"}`}
         >
           English
         </button>
-        <button 
+        <button
           onClick={() => setLanguage("it")}
-          className={`px-4 py-2 rounded ${language === "it" ? "bg-primary text-white" : "bg-gray-200"}`}
+          className={`px-4 py-2 rounded ${language === "it" ? "bg-primary text-background" : "bg-gray-200"}`}
         >
           Italian
         </button>
-        <button 
+        <button
           onClick={() => setLanguage("de")}
-          className={`px-4 py-2 rounded ${language === "de" ? "bg-primary text-white" : "bg-gray-200"}`}
+          className={`px-4 py-2 rounded ${language === "de" ? "bg-primary text-background" : "bg-gray-200"}`}
         >
           German
         </button>

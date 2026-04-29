@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useQuery } from '@tanstack/react-query';
-import EditableText from '../common/EditableText';
 import { motion } from 'framer-motion';
 import { Yellowtail } from "next/font/google";
 
@@ -70,7 +69,7 @@ export default function AboutContent({ lang, initialData }: AboutContentProps) {
         </div>
 
         {/* Main Content */}
-        <Hero imgUrl="/assets/Stanza%203%20-%20Foto-15.jpg" title="Marinali" subtitle="ABOUT US" />
+        <Hero imgUrl="/assets/Stanza%203%20-%20Foto-15.jpg" title="Marinali" subtitle="ABOUT US" lang={lang} />
       </section>
 
       {/* Breadcrumb Bar */}
@@ -90,29 +89,13 @@ export default function AboutContent({ lang, initialData }: AboutContentProps) {
       {/* Story Section */}
       <section className="max-w-7xl mx-auto px-4 py-24 md:py-32">
         <div className="text-center mb-20">
-          <EditableText
-            page="about"
-            path="storyTitle"
-            lang={lang}
-            initialValue={data?.storyTitle}
-            className="text-3xl md:text-5xl font-bold leading-tight max-w-4xl mx-auto mb-16"
-          />
+          <div className="text-3xl md:text-5xl font-bold leading-tight max-w-4xl mx-auto mb-16">
+            {data?.storyTitle}
+          </div>
         </div>
         <div className="grid md:grid-cols-2 gap-12 md:gap-24 text-gray-600 leading-relaxed text-lg italic">
-          <EditableText
-            page="about"
-            path="storyDescription"
-            lang={lang}
-            initialValue={data?.storyDescription}
-            multiline
-          />
-          <EditableText
-            page="about"
-            path="storyDetails"
-            lang={lang}
-            initialValue={data?.storyDetails}
-            multiline
-          />
+          <div>{data?.storyDescription}</div>
+          <div>{data?.storyDetails}</div>
         </div>
       </section>
 
@@ -174,42 +157,24 @@ export default function AboutContent({ lang, initialData }: AboutContentProps) {
           />
         </div>
         <div className="bg-white h-full flex flex-col justify-center px-8 md:px-24 py-20">
-          <EditableText
-            page="about"
-            path="conceptTitle"
-            lang={lang}
-            initialValue={data?.conceptTitle}
-            className="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter"
-          />
-          <EditableText
-            page="about"
-            path="conceptDescription"
-            lang={lang}
-            initialValue={data?.conceptDescription}
-            className="text-lg text-gray-500 leading-relaxed italic"
-            multiline
-          />
+          <div className="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">
+            {data?.conceptTitle}
+          </div>
+          <div className="text-lg text-gray-500 leading-relaxed italic">
+            {data?.conceptDescription}
+          </div>
         </div>
       </section>
 
       {/* Hospitality Section */}
       <section className="grid md:grid-cols-2 items-center">
-        <div className="bg-[#123149] text-white h-full flex flex-col justify-center px-8 md:px-24 py-20 order-2 md:order-1" style={{ backgroundColor: primaryColor }}>
-          <EditableText
-            page="about"
-            path="hospitalityTitle"
-            lang={lang}
-            initialValue={data?.hospitalityTitle}
-            className="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter"
-          />
-          <EditableText
-            page="about"
-            path="hospitalityDescription"
-            lang={lang}
-            initialValue={data?.hospitalityDescription}
-            className="text-lg opacity-80 leading-relaxed italic"
-            multiline
-          />
+        <div className="bg-[#123149] text-background h-full flex flex-col justify-center px-8 md:px-24 py-20 order-2 md:order-1" style={{ backgroundColor: primaryColor }}>
+          <div className="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">
+            {data?.hospitalityTitle}
+          </div>
+          <div className="text-lg opacity-80 leading-relaxed italic">
+            {data?.hospitalityDescription}
+          </div>
         </div>
         <div className="relative h-[600px] md:h-[800px] order-1 md:order-2">
           <Image
@@ -229,24 +194,16 @@ export default function AboutContent({ lang, initialData }: AboutContentProps) {
           fill
           className="object-cover brightness-75 scale-110"
         />
-        <div className="relative z-10 max-w-2xl bg-white/10 backdrop-blur-md p-12 text-white border border-white/20">
-          <EditableText
-            page="about"
-            path="ctaTitle"
-            lang={lang}
-            initialValue={data?.ctaTitle}
-            className="text-5xl font-bold mb-6 tracking-tight"
-          />
-          <EditableText
-            page="about"
-            path="ctaDescription"
-            lang={lang}
-            initialValue={data?.ctaDescription}
-            className="text-xl mb-10 block italic font-light"
-          />
+        <div className="relative z-10 max-w-2xl bg-white/10 backdrop-blur-md p-12 text-background border border-white/20">
+          <div className="text-5xl font-bold mb-6 tracking-tight">
+            {data?.ctaTitle}
+          </div>
+          <div className="text-xl mb-10 block italic font-light">
+            {data?.ctaDescription}
+          </div>
           {/* <Link
             href={`/${lang}/rooms`}
-            className="inline-block px-10 py-5 bg-white text-black text-[10px] tracking-[0.3em] font-bold uppercase hover:bg-black hover:text-white transition-all duration-300"
+            className="inline-block px-10 py-5 bg-white text-black text-[10px] tracking-[0.3em] font-bold uppercase hover:bg-black hover:text-background transition-all duration-300"
           >
             {lang === 'en' ? 'EXPLORE ROOMS' : lang === 'it' ? 'ESPLORA CAMERE' : 'ZIMMER ENTDECKEN'}
           </Link> */}

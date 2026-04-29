@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import EditableText from '../common/EditableText';
 import { useQuery } from '@tanstack/react-query';
 
 export default function FeaturedRetreat({ lang, data }: { lang: string; data?: any }) {
@@ -81,13 +80,7 @@ export default function FeaturedRetreat({ lang, data }: { lang: string; data?: a
               margin: 0
             }}
           >
-            <EditableText
-              lang={lang}
-              page="home"
-              path="featuredTitle"
-              initialValue={data?.featuredTitle || "Introducing Casa Cook Madonna"}
-              multiline
-            />
+            {data?.featuredTitle || "Introducing Casa Cook Madonna"}
           </h2>
 
           <p
@@ -100,13 +93,7 @@ export default function FeaturedRetreat({ lang, data }: { lang: string; data?: a
               margin: 0
             }}
           >
-            <EditableText
-              lang={lang}
-              page="home"
-              path="featuredDescription"
-              initialValue={data?.featuredDescription || "Nestled in the picturesque village of Madonna di Campiglio..."}
-              multiline
-            />
+            {data?.featuredDescription || "Nestled in the picturesque village of Madonna di Campiglio..."}
           </p>
 
           <div className='bg-primary px-8 w-fit py-3 text-center' style={{ marginTop: '10px' }}>
@@ -121,12 +108,7 @@ export default function FeaturedRetreat({ lang, data }: { lang: string; data?: a
                 transition: 'all 0.3s ease'
               }}
             >
-              <EditableText
-                lang={lang}
-                page="home"
-                path="featuredButtonText"
-                initialValue={data?.featuredButtonText || "Discover Casa Cook Madonna"}
-              />
+              {data?.featuredButtonText || "Discover Casa Cook Madonna"}
             </button>
           </div>
         </div>

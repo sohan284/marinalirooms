@@ -36,23 +36,17 @@ model SiteSettings {
 }
 
 model Room {
-  id            String   @id @default(cuid())
-  image         String
-  imageKey      String?
-  location      String
-  order         Int      @default(0)
-  isOffer       Boolean  @default(false)
-  isHighlight   Boolean  @default(false)
-  isLargeHighlight Boolean @default(false)
-  
-  // Localized Fields
-  nameEn        String
-  nameIt        String
-  nameDe        String
-  descriptionEn String
-  descriptionIt String
-  descriptionDe String
-
-  updatedAt     DateTime @updatedAt
-  createdAt     DateTime @default(now())
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  images       Json?    @default("[]") // Array of image objects { url, key }
+  translations Json     // { it: { name, location, description, capacity, amenities }, en: { ... }, de: { ... } }
+  order        Int      @default(0)
+  updatedAt    DateTime @updatedAt
+  createdAt    DateTime @default(now())
+}model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

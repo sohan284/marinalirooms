@@ -46,7 +46,7 @@ export default function EditableText({
     },
     onSuccess: () => {
       toast.success("Text updated successfully!", { className: "text-green-600 bg-green-50" });
-      queryClient.invalidateQueries({ queryKey: [page, lang] });
+      queryClient.invalidateQueries({ queryKey: ["content", lang, page] });
       setIsEditing(false);
     },
     onError: () => {
@@ -131,7 +131,7 @@ export default function EditableText({
   return (
     <Component className={cn("relative group inline-flex items-center gap-2 max-w-full", className)}>
       <span className="inline-block break-words">{value}</span>
-      {/* <button
+      <button
         onClick={(e) => {
           e.stopPropagation();
           setIsEditing(true);
@@ -141,7 +141,7 @@ export default function EditableText({
         title="Inline Edit"
       >
         <Edit size={14} />
-      </button> */}
+      </button>
     </Component>
   );
 }

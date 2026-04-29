@@ -28,7 +28,7 @@ export async function PUT(request: NextRequest) {
     const body = await request.json();
 
     // Validate that at least one valid field is provided
-    const stringFields = ["primaryColor", "secondaryColor", "backgroundColor", "textColor", "fontFamily", "logo", "logoKey", "heroImage", "heroImageKey", "retreatImage", "retreatImageKey"];
+    const stringFields = ["primaryColor", "secondaryColor", "backgroundColor", "textColor", "fontFamily", "heroImage", "heroImageKey"];
     const updates: Record<string, unknown> = {};
 
     for (const field of stringFields) {

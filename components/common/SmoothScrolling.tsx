@@ -10,7 +10,7 @@ function ScrollResizeHandler() {
   useEffect(() => {
     if (!lenis) return;
 
-    // Trigger resize on every pathname change
+    // Trigger resize on every pathname change to ensure Lenis updates scroll height
     lenis.resize();
 
     // Also watch for body height changes (dynamic content, images, etc.)
@@ -29,12 +29,6 @@ function ScrollResizeHandler() {
 }
 
 export default function SmoothScrolling({ children }: { children: ReactNode }) {
-  const pathname = usePathname();
-
-  if (pathname?.startsWith('/admin')) {
-    return <>{children}</>;
-  }
-
   return (
     <ReactLenis root options={{
       lerp: 0.1,

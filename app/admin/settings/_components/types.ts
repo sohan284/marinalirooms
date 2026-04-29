@@ -18,6 +18,11 @@ export interface FooterConfig {
   socialLinks: FooterSocialLink[];
   copyright: string;
   bottomLinks: FooterLink[];
+  mapUrl?: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+  whatsapp?: string;
 }
 
 export interface ThemeSettings {
@@ -26,11 +31,7 @@ export interface ThemeSettings {
   backgroundColor: string;
   textColor: string;
   fontFamily: string;
-  logo?: string | null;
-  logoKey?: string | null;
   heroImage?: string | null;
   heroImageKey?: string | null;
-  retreatImage?: string | null;
-  retreatImageKey?: string | null;
   footerConfig?: Record<string, FooterConfig> | null;
 }

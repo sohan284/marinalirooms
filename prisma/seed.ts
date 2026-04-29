@@ -4,6 +4,7 @@ import pg from "pg";
 import "dotenv/config";
 import fs from "fs";
 import path from "path";
+import bcrypt from "bcryptjs";
 
 const connectionString = process.env.DATABASE_URL;
 if (!connectionString) {
@@ -74,6 +75,20 @@ async function main() {
     },
   });
   console.log("Seeded SiteSettings with default theme colors.");
+
+  // 4. Seed Admin
+  const adminEmail = "welcome@marinalirooms.it";
+  const hashedPassword = await bcrypt.hash("marinalirooms@", 10);
+
+  await prisma.admin.upsert({
+    where: { email: adminEmail },
+    update: {},
+    create: {
+      email: adminEmail,
+      password: hashedPassword,
+    },
+  });
+  console.log("Seeded initial admin user.");
 }
 
 main()

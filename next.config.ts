@@ -10,6 +10,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/en/le-suite',
+        destination: '/en#le-suite',
+        permanent: true,
+      },
+      {
+        source: '/it/le-suite',
+        destination: '/it#le-suite',
+        permanent: true,
+      },
+      {
+        source: '/de/le-suite',
+        destination: '/de#le-suite',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;

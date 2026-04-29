@@ -29,11 +29,12 @@ async function main() {
     await prisma.room.update({
       where: { id: room.id },
       data: { 
-        image: newImage,
-        location: 'Bassano del Grappa' // Standardize location
+        images: [{ url: newImage }],
       },
+
     });
-    console.log(`Updated room: ${room.nameEn || room.id} -> ${newImage}`);
+    console.log(`Updated room: ${room.id} -> ${newImage}`);
+
   }
 
   // Update site settings in DB as well to match content.json

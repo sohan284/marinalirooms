@@ -22,6 +22,11 @@ export interface FooterConfig {
   socialLinks: FooterSocialLink[];
   copyright: string;
   bottomLinks: FooterLink[];
+  mapUrl?: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+  whatsapp?: string;
 }
 
 export interface ThemeSettings {

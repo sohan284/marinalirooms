@@ -38,8 +38,9 @@ export const metadata: Metadata = {
 };
 
 import { SettingsService } from "@/lib/services/settingsService";
-import SmoothScrolling from "@/components/common/SmoothScrolling";
 import Providers from "./providers";
+
+import { Toaster } from "sonner";
 
 export default async function RootLayout({
   children,
@@ -63,15 +64,17 @@ export default async function RootLayout({
         "--primary-color": primaryColor,
         "--secondary-color": secondaryColor,
         "--background": backgroundColor,
+        "--background-color": backgroundColor,
         "--foreground": textColor,
+        "--popover": backgroundColor,
+        "--popover-foreground": textColor,
         "--font-primary": fontFamily,
       }}
     >
       <body className="min-h-screen flex flex-col">
         <Providers>
-          <SmoothScrolling>
-            {children}
-          </SmoothScrolling>
+          {children}
+          <Toaster position="top-center" richColors />
         </Providers>
       </body>
     </html>

@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
-import EditableText from "@/components/common/EditableText";
 
 import 'swiper/css';
 
@@ -17,7 +16,7 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
   const swiperRef = useRef<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = data?.reviews || [
+  const reviews = (Array.isArray(data?.reviews) && data.reviews.length > 0) ? data.reviews : [
     {
       id: 1,
       quote: "“TRULY AMAZING STAY THAT EXCEEDED OUR HIGH EXPECTATIONS. BEST STAFF EVER! SO FRIENDLY, FUNNY, PROFESSIONAL AND CARING. THE HOTEL ITSELF IS A PIECE OF ART IN DESIGN, CONCEPT AND LAYOUT. TO TOP IT ALL OFF THE BREAKFAST, LUNCH AND DINNER AT THE BEACHHOUSE EVERYDAY WAS SUCH A HIGH LEVEL!”",
@@ -40,6 +39,7 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
 
   return (
     <section
+      id="reviews"
       className='mt-10 lg:mt-20 bg-primary'
       style={{
         color: '#fff',
@@ -66,9 +66,9 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <div
                   style={{
-                    fontSize: 'clamp(1rem, 1.8vw, 1.35rem)',
+                    fontSize: 'clamp(0.9rem, 1.5vw, 1.15rem)',
                     fontWeight: 700,
-                    lineHeight: 1.4,
+                    lineHeight: 1.5,
                     letterSpacing: '0.03em',
                     marginBottom: 'clamp(1.5rem, 3vw, 2rem)',
                     maxWidth: '800px',
@@ -76,19 +76,14 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
                     margin: '0 auto'
                   }}
                 >
-                  <EditableText
-                    lang={lang}
-                    page="home"
-                    path={`reviews.${index}.quote`}
-                    initialValue={review.quote}
-                    multiline
-                    className="text-center justify-center items-center w-full max-w-[800px] mx-auto"
-                  />
+                  <div className="text-center justify-center items-center w-full max-w-[800px] mx-auto">
+                    {review.quote}
+                  </div>
                 </div>
 
                 <div
                   style={{
-                    fontSize: 'clamp(0.75rem, 1.2vw, 0.9rem)',
+                    fontSize: 'clamp(0.7rem, 1vw, 0.8rem)',
                     fontWeight: 400,
                     letterSpacing: '0.1em',
                     opacity: 0.9,
@@ -96,17 +91,12 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
                     marginTop: '1rem',
                   }}
                 >
-                  <EditableText
-                    lang={lang}
-                    page="home"
-                    path={`reviews.${index}.attribution`}
-                    initialValue={review.attribution}
-                  />
+                  <span>{review.attribution}</span>
                 </div>
 
                 <div
                   style={{
-                    fontSize: 'clamp(0.75rem, 1.2vw, 0.9rem)',
+                    fontSize: 'clamp(0.7rem, 1vw, 0.8rem)',
                     color: '#fff',
                     textDecoration: 'underline',
                     opacity: 0.8,
@@ -114,12 +104,7 @@ export default function ReviewSlider({ lang, data }: ReviewSliderProps) {
                     letterSpacing: '0.1em'
                   }}
                 >
-                  <EditableText
-                    lang={lang}
-                    page="home"
-                    path={`reviews.${index}.source`}
-                    initialValue={review.source}
-                  />
+                  <span>{review.source}</span>
                 </div>
               </div>
             </SwiperSlide>

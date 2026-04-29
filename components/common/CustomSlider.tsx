@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import { motion } from 'framer-motion';
-import { BookingModal } from './BookingModal';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -33,8 +32,6 @@ export default function CustomSlider({ title, items, sectionId, showBookNow, lan
   const swiperRef = useRef<SwiperType | null>(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [bookingUrl, setBookingUrl] = useState("");
 
   return (
     <motion.section
@@ -292,8 +289,7 @@ export default function CustomSlider({ title, items, sectionId, showBookNow, lan
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        setBookingUrl(`https://marinalirooms.kross.travel/book/step1?lang=${lang}`);
-                        setIsModalOpen(true);
+                        window.open(`https://marinalirooms.kross.travel/book/step1?lang=${lang}`, '_blank');
                       }}
                       style={{
                         padding: '12px 24px',
@@ -327,11 +323,6 @@ export default function CustomSlider({ title, items, sectionId, showBookNow, lan
         }
       `}</style>
       
-      <BookingModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        bookingUrl={bookingUrl} 
-      />
     </motion.section>
   );
 }

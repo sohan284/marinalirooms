@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useQuery } from '@tanstack/react-query';
 import { useState, useEffect } from 'react';
-import EditableText from '../common/EditableText';
 import { Yellowtail } from "next/font/google";
 import Hero from '../Home/Hero';
 
@@ -61,7 +60,7 @@ export default function ContactContent({ lang, initialData }: ContactContentProp
   return (
     <div className="bg-[#F8F6F2] min-h-screen font-playfair">
       {/* Hero Section */}
-      <Hero imgUrl="/assets/Stanza%202%20-%20Foto-2.jpg" title="Marinali" subtitle="CONTACT US" />
+      <Hero imgUrl="/assets/Stanza%202%20-%20Foto-2.jpg" title="Marinali" subtitle="CONTACT US" lang={lang} />
     </div>
   );
 }

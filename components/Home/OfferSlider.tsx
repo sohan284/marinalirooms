@@ -3,7 +3,6 @@
 import { useQuery } from "@tanstack/react-query";
 import CustomSlider from "../common/CustomSlider";
 import { Skeleton } from "../ui/skeleton";
-import EditableText from "../common/EditableText";
 
 export interface SliderItem {
   id: string | number;
@@ -37,14 +36,7 @@ export default function OfferSlider({ lang, data }: { lang: string; data?: any }
   return (
     <div className='mb-10'>
       <CustomSlider
-        title={
-          <EditableText 
-            lang={lang}
-            page="home"
-            path="offersTitle" 
-            initialValue={data?.offersTitle || "OFFERS"} 
-          />
-        }
+        title={data?.offersTitle || "OFFERS"}
         items={offers}
         sectionId="offer-slider"
         showBookNow={true}

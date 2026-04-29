@@ -9,8 +9,6 @@
   "content": {
     "en": {
       "home": {
-        "title": "Marinali",
-        "subtitle": "ROOMS",
         "welcomeText": "A historic Palazzo from 1460 in the heart of Bassano del Grappa, offering Italian luxury and heritage.",
         "aboutTitle": "Our Heritage",
         "aboutDescription": "Built in 1460, Marinali Rooms preserves the authentic Italian Palazzo experience with modern comfort.",
@@ -71,18 +69,22 @@
         "submitButton": "Send Inquiry",
         "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.675046274438!2d11.7335!3d45.7667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d65565555555%3A0x5555555555555555!2sVia%20Marinali%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sen!2sit!4v1713535000000!5m2!1sen!2sit"
       },
-      "thankYou": {
+      "thank-you": {
+
         "title": "Thank You",
-        "subtitle": "YOUR RESERVATION IS CONFIRMED",
-        "message": "We are delighted to welcome you to Marinali Rooms. A confirmation email with all the details has been sent to you.",
-        "returnHome": "Back to Home",
-        "contactUs": "Contact Us"
+        "subtitle": "Booking Confirmed",
+        "description": "Your request has been successfully processed. We have sent you a confirmation email with all the details of your stay at Marinali Rooms.",
+        "labelStay": "Stay",
+        "valueStay": "Check Email",
+        "labelAddress": "Address",
+        "valueAddress": "Bassano del Grappa",
+        "labelSupport": "Support",
+        "valueSupport": "+39 347 1234567",
+        "buttonLabel": "Back to Home"
       }
     },
     "it": {
       "home": {
-        "title": "Marinali",
-        "subtitle": "CAMERE",
         "welcomeText": "Un Palazzo storico del 1460 nel cuore di Bassano del Grappa, che offre lusso e tradizione italiana.",
         "aboutTitle": "La Nostra Storia",
         "aboutDescription": "Costruito nel 1460, Marinali Rooms conserva l'autentica esperienza del Palazzo italiano con il comfort moderno.",
@@ -117,19 +119,6 @@
           ]
         }
       },
-      "about": {
-        "heroTitle": "Chi Siamo",
-        "heroSubtitle": "SCOPRITE L'ARTE DELL'OSPITALITÀ ITALIANA",
-        "storyTitle": "SII TE STESSO SENTENDOTI PARTE DI QUALCOSA",
-        "storyDescription": "Marinali Rooms è una collezione di camere e suite dal design individuale per il viaggiatore moderno. Nata dal desiderio di creare uno spazio dove il lusso incontra l'autenticità, offriamo un'esperienza unica nel cuore di Bassano del Grappa. Il nostro palazzo, risalente al 1460, è stato meticolosamente restaurato per preservare la sua anima storica offrendo ogni comfort moderno.",
-        "storyDetails": "Ogni angolo di Marinali Rooms racconta una storia di eredità e artigianalità. Dagli affreschi restaurati a mano ai pezzi di design italiano accuratamente selezionati, vi invitiamo a immergervi in un'atmosfera di intramontabile eleganza. La nostra filosofia è semplice: far sentire ogni ospite a casa propria vivendo la storia straordinaria della nostra città.",
-        "conceptTitle": "PALAZZO MARINALI, DAL 1460",
-        "conceptDescription": "Il nostro palazzo rappresenta molto più di un semplice luogo dove soggiornare; è un monumento vivente all'architettura veneziana. Situato nella storica Contrà dei Marinali, l'edificio ha testimoniato secoli di storia, dall'apice della Repubblica di Venezia ai giorni nostri. Oggi, si erge come testimonianza della bellezza duratura dell'artigianato italiano e del calore dell'ospitalità mediterranea.",
-        "hospitalityTitle": "TRADIZIONI CHE ISPIRANO",
-        "hospitalityDescription": "Crediamo che l'ospitalità sia una forma d'arte. Il nostro team è dedicato a fornire un servizio personale e attento che anticipa le vostre esigenze senza essere invadente. Che si tratti di consigli per una bottega artigiana locale o di una degustazione di vini privata nella nostra cantina, siamo qui per garantire che il vostro viaggio a Bassano sia davvero indimenticabile.",
-        "ctaTitle": "VUOI VEDERE ALTRO?",
-        "ctaDescription": "Esplora la nostra collezione curata di camere e suite, ognuna progettata per offrire un santuario sereno dopo una giornata di scoperte."
-      },
       "contact": {
         "contactTitle": "Contattaci",
         "infoTitle": "DOVE TROVARCI",
@@ -143,18 +132,21 @@
         "submitButton": "Invia Richiesta",
         "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.675046274438!2d11.7335!3d45.7667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d65565555555%3A0x5555555555555555!2sVia%20Marinali%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sen!2sit!4v1713535000000!5m2!1sen!2sit"
       },
-      "thankYou": {
+      "thank-you": {
         "title": "Grazie",
-        "subtitle": "LA TUA PRENOTAZIONE È CONFERMATA",
-        "message": "Siamo felici di accoglierti a Marinali Rooms. Ti è stata inviata un'e-mail di conferma con tutti i dettagli.",
-        "returnHome": "Torna alla Home",
-        "contactUs": "Contattaci"
+        "subtitle": "Prenotazione Confermata",
+        "description": "La tua richiesta è stata elaborata con successo. Ti abbiamo inviato un'email di conferma con tutti i dettagli del tuo soggiorno presso Marinali Rooms.",
+        "labelStay": "Soggiorno",
+        "valueStay": "Controlla Email",
+        "labelAddress": "Indirizzo",
+        "valueAddress": "Bassano del Grappa",
+        "labelSupport": "Supporto",
+        "valueSupport": "+39 347 1234567",
+        "buttonLabel": "Torna alla Home"
       }
     },
     "de": {
       "home": {
-        "title": "Marinali",
-        "subtitle": "ZIMMER",
         "welcomeText": "Ein historischer Palazzo aus dem Jahr 1460 im Herzen von Bassano del Grappa, der italienischen Luxus und Erbe bietet.",
         "aboutTitle": "Unser Erbe",
         "aboutDescription": "Das Marinali Rooms wurde 1460 erbaut und bewahrt das authentische italienische Palazzo-Erlebnis mit modernem Komfort.",
@@ -189,19 +181,6 @@
           ]
         }
       },
-      "about": {
-        "heroTitle": "Über Uns",
-        "heroSubtitle": "ERLEBEN SIE DIR KUNST ITALIENISCHER GASTFREUNDSCHAFT",
-        "storyTitle": "SEIN SIE SIE SELBST UND FÜHLEN SIE SICH ZUGEHÖRIG",
-        "storyDescription": "Marinali Rooms ist eine Kollektion individuell gestalteter Zimmer und Suiten für den modernen Reisenden. Geboren aus dem Wunsch, einen Raum zu schaffen, in dem Luxus auf Authentizität trifft, bieten wir ein einzigartiges Erlebnis im Herzen von Bassano del Grappa. Unser Palazzo aus dem Jahr 1460 wurde sorgfältig restauriert, um seine historische Seele zu bewahren und gleichzeitig jeden modernen Komfort zu bieten.",
-        "storyDetails": "Jede Ecke von Marinali Rooms erzählt eine Geschichte von Erbe und Handwerkskunst. Von den handrestaurierten Fresken bis hin zu den sorgfältig kuratierten italienischen Designstücken laden wir Sie ein, in eine Atmosphäre zeitloser Eleganz einzutauchen. Unsere Philosophie ist einfach: Jedem Gast das Gefühl zu geben, zu Hause zu sein, während er die außergewöhnliche Geschichte unserer Stadt erlebt.",
-        "conceptTitle": "PALAZZO MARINALI, SEIT 1460",
-        "conceptDescription": "Unser Palast ist mehr als nur ein Ort zum Übernachten; er ist ein lebendiges Denkmal venezianischer Architektur. Das Gebäude in der historischen Contrà dei Marinali hat Jahrhunderte der Geschichte miterlebt, von der Blütezeit der Republik Venedig bis heute. Heute steht es als Zeugnis für die beständige Schönheit italienischer Handwerkskunst und die Wärme mediterraner Gastfreundschaft.",
-        "hospitalityTitle": "INSPIRIERENDE TRADITIONEN",
-        "hospitalityDescription": "Wir glauben, dass Gastfreundschaft eine Kunstform ist. Unser Team ist bestrebt, einen persönlichen, aufmerksamen Service zu bieten, der Ihre Bedürfnisse vorwegnimmt, ohne aufdringlich zu sein. Ob es sich um Empfehlungen für eine lokale Handwerkswerkstatt oder eine private Weinprobe in unserem Keller handelt, wir sind hier, um sicherzustellen, dass Ihre Reise in Bassano unvergesslich wird.",
-        "ctaTitle": "MÖCHTEN SIE MEHR SEHEN?",
-        "ctaDescription": "Entdecken Sie unsere kuratierte Kollektion von Zimmern und Suiten, die jeweils als ruhiger Rückzugsort nach einem Tag voller Entdeckungen konzipiert wurden."
-      },
       "contact": {
         "contactTitle": "Kontakt",
         "infoTitle": "WO SIE UNS FINDEN",
@@ -215,12 +194,17 @@
         "submitButton": "Anfrage senden",
         "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.675046274438!2d11.7335!3d45.7667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d65565555555%3A0x5555555555555555!2sVia%20Marinali%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sen!2sit!4v1713535000000!5m2!1sen!2sit"
       },
-      "thankYou": {
+      "thank-you": {
         "title": "Danke",
-        "subtitle": "IHRE RESERVIERUNG IST BESTÄTIGT",
-        "message": "Wir freuen uns, Sie im Marinali Rooms begrüßen zu dürfen. Eine Bestätigungs-E-Mail mit allen Details wurde an Sie gesendet.",
-        "returnHome": "Zurück zur Startseite",
-        "contactUs": "Kontaktieren Sie uns"
+        "subtitle": "Buchung Bestätigt",
+        "description": "Ihre Anfrage wurde erfolgreich bearbeitet. Wir haben Ihnen eine Bestätigungs-E-Mail mit allen Details Ihres Aufenthalts im Marinali Rooms gesendet.",
+        "labelStay": "Aufenthalt",
+        "valueStay": "E-Mail prüfen",
+        "labelAddress": "Adresse",
+        "valueAddress": "Bassano del Grappa",
+        "labelSupport": "Support",
+        "valueSupport": "+39 347 1234567",
+        "buttonLabel": "Zurück zur Startseite"
       }
     }
   }

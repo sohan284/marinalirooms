@@ -2,11 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import EditableText from '../common/EditableText';
 import { useQuery } from '@tanstack/react-query';
 import { Skeleton } from '../ui/skeleton';
-import { BookingModal } from '../common/BookingModal';
-import { useState } from 'react';
+import EditableText from '../common/EditableText';
 
 interface HighlightRoom {
   id: string;
@@ -16,10 +14,7 @@ interface HighlightRoom {
   isLargeHighlight: boolean;
 }
 
-export default function Highlights({ lang, data }: { lang: string; data?: any }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [bookingUrl, setBookingUrl] = useState("");
-
+export default function Highlights({ lang, data, isEditable = false }: { lang: string; data?: any; isEditable?: boolean }) {
   const { data: rooms = [], isLoading } = useQuery<HighlightRoom[]>({
     queryKey: ["rooms", "highlights", lang],
     queryFn: async () => {
@@ -61,7 +56,11 @@ export default function Highlights({ lang, data }: { lang: string; data?: any })
             textTransform: 'uppercase'
           }}
         >
-          <EditableText lang={lang} page="home" path="highlightsTitle" initialValue={data?.highlightsTitle || "HIGHLIGHTS"} />
+          {isEditable ? (
+            <EditableText lang={lang} page="home" path="highlightsTitle" initialValue={data?.highlightsTitle || "HIGHLIGHTS"} />
+          ) : (
+            data?.highlightsTitle || "HIGHLIGHTS"
+          )}
         </h2>
 
         <div
@@ -149,8 +148,7 @@ export default function Highlights({ lang, data }: { lang: string; data?: any })
                   onClick={(e) => {
                     e.stopPropagation();
                     const successUrl = `${window.location.origin}/${lang}/thank-you`;
-                    setBookingUrl(`https://marinalirooms.kross.travel/book/step1?lang=${lang}&url_back=${encodeURIComponent(successUrl)}`);
-                    setIsModalOpen(true);
+                    window.open(`https://marinalirooms.kross.travel/book/step1?lang=${lang}&url_back=${encodeURIComponent(successUrl)}`, '_blank');
                   }}
                   style={{
                     padding: '12px 24px',
@@ -184,12 +182,6 @@ export default function Highlights({ lang, data }: { lang: string; data?: any })
           }
         }
       `}</style>
-
-      <BookingModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        bookingUrl={bookingUrl}
-      />
     </motion.section>
   );
 }

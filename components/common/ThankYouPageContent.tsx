@@ -69,7 +69,7 @@ export default function ThankYouPageContent({ lang, data }: ThankYouPageContentP
       >
         <Link
           href={`/${lang}`}
-          className="px-10 py-5 bg-primary text-white font-bold tracking-[0.2em] text-xs uppercase hover:bg-primary/90 transition-all shadow-xl"
+          className="px-10 py-5 bg-primary text-background font-bold tracking-[0.2em] text-xs uppercase hover:bg-primary/90 transition-all shadow-xl"
         >
           {content.returnHome}
         </Link>
