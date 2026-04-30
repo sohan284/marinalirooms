@@ -22,11 +22,8 @@ export default function LeSuiteBookingFooter({
         // Mobile: Open the booking drawer/modal
         window.dispatchEvent(new CustomEvent('open-booking-drawer'));
       } else {
-        // Desktop: Navigate to the external booking site
-        const baseUrl = "https://marinalirooms.kross.travel/book/step1";
-        const successUrl = `${window.location.origin}/${lang}/thank-you`;
-        const finalUrl = `${baseUrl}?lang=${lang}&url_back=${encodeURIComponent(successUrl)}`;
-        window.open(finalUrl, '_blank');
+        // Desktop: Trigger visual feedback on the floating booking bar
+        window.dispatchEvent(new CustomEvent('ping-booking-bar'));
       }
     }
   };

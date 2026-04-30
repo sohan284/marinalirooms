@@ -23,6 +23,7 @@ export default async function EnglishLayout({ children }: { children: React.Reac
       <BookingBar data={data} lang="en" />
       <Footer
         lang="en"
+        infoTitle={footerConfig?.infoTitle}
         address={footerConfig?.address}
         phone={footerConfig?.phone}
         email={footerConfig?.email}

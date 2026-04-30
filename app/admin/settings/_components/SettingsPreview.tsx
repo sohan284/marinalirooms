@@ -127,6 +127,7 @@ export function SettingsPreview({
 
         <Footer 
           lang="en"
+          infoTitle={fc.infoTitle}
           address={fc.address}
           phone={fc.phone}
           email={fc.email}

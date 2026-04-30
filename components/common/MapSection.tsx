@@ -54,13 +54,13 @@ export default function MapSection({ lang, mapUrl, address }: MapSectionProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="relative w-full h-full group cursor-pointer overflow-hidden">
+        <div className="absolute inset-0 w-full h-full group cursor-pointer overflow-hidden">
           <Image
             src="/map.webp"
             alt="Map Placeholder"
             fill
             priority
-            className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            className="object-cover transition-transform duration-100"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-[#123149]/5 group-hover:bg-[#123149]/15 transition-colors duration-500 flex items-center justify-center">

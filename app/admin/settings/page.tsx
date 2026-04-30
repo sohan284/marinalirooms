@@ -16,6 +16,7 @@ import { ThemeSettings, FooterConfig } from "./_components/types";
 
 const DEFAULT_FOOTER_CONFIG: Record<string, FooterConfig> = {
   en: {
+    infoTitle: "GET IN TOUCH",
     columns: [],
     socialLinks: [],
     copyright: "© 2026 Marinali Rooms. All rights reserved.",
@@ -27,6 +28,7 @@ const DEFAULT_FOOTER_CONFIG: Record<string, FooterConfig> = {
     whatsapp: "+390424123456",
   },
   it: {
+    infoTitle: "CONTATTACI",
     columns: [],
     socialLinks: [],
     copyright: "© 2026 Marinali Rooms. Tutti i diritti riservati.",
@@ -38,6 +40,7 @@ const DEFAULT_FOOTER_CONFIG: Record<string, FooterConfig> = {
     whatsapp: "+390424123456",
   },
   de: {
+    infoTitle: "KONTAKTIEREN SIE UNS",
     columns: [],
     socialLinks: [],
     copyright: "© 2026 Marinali Rooms. Alle Rechte vorbehalten.",
@@ -246,6 +249,10 @@ export default function SettingsPage() {
                       <SelectItem value="var(--font-playfair)">Playfair Display</SelectItem>
                       <SelectItem value="var(--font-montserrat)">Montserrat</SelectItem>
                       <SelectItem value="var(--font-lora)">Lora</SelectItem>
+                      <SelectItem value="var(--font-outfit)">Outfit</SelectItem>
+                      <SelectItem value="var(--font-poppins)">Poppins</SelectItem>
+                      <SelectItem value="var(--font-roboto)">Roboto</SelectItem>
+                      <SelectItem value="var(--font-opensans)">Open Sans</SelectItem>
                     </SelectContent>
                   </Select>
                   <p className="text-sm text-gray-500">This font class is applied globally to headings and body text.</p>
@@ -299,6 +306,15 @@ export default function SettingsPage() {
                 {/* Contact & Map */}
                 <div className="border-t pt-8 space-y-6">
                   <Label className="text-base font-semibold">Contact Info & Map</Label>
+                  <div className="space-y-3 max-w-md">
+                    <Label className="text-xs">Get In Touch Heading</Label>
+                    <Input
+                      value={fc.infoTitle || ""}
+                      onChange={(e) => updateFooterConfig({ infoTitle: e.target.value })}
+                      placeholder="GET IN TOUCH"
+                      className="text-sm"
+                    />
+                  </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-3">
                       <Label className="text-xs">Address</Label>

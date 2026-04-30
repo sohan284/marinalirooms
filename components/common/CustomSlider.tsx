@@ -289,7 +289,13 @@ export default function CustomSlider({ title, items, sectionId, showBookNow, lan
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        window.open(`https://marinalirooms.kross.travel/book/step1?lang=${lang}`, '_blank');
+                        if (typeof window !== 'undefined') {
+                          if (window.innerWidth < 1024) {
+                            window.dispatchEvent(new CustomEvent('open-booking-drawer'));
+                          } else {
+                            window.dispatchEvent(new CustomEvent('ping-booking-bar'));
+                          }
+                        }
                       }}
                       style={{
                         padding: '12px 24px',

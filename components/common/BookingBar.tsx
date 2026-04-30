@@ -48,6 +48,17 @@ const BookingBar = ({ data, lang = 'en' }: BookingBarProps) => {
     }
   }, [drawerOpen, lenis]);
 
+  const [isPinging, setIsPinging] = useState(false);
+
+  useEffect(() => {
+    const handlePing = () => {
+      setIsPinging(true);
+      setTimeout(() => setIsPinging(false), 600); // Animation duration
+    };
+    window.addEventListener('ping-booking-bar', handlePing);
+    return () => window.removeEventListener('ping-booking-bar', handlePing);
+  }, []);
+
   useEffect(() => {
     const handleOpenDrawer = () => setDrawerOpen(true);
     window.addEventListener('open-booking-drawer', handleOpenDrawer);
@@ -246,9 +257,22 @@ const BookingBar = ({ data, lang = 'en' }: BookingBarProps) => {
     <>
       {/* ========== DESKTOP: Floating booking bar (hidden on mobile) ========== */}
       <div className="hidden lg:flex z-40 fixed bottom-8 left-0 right-0 justify-center px-6 pointer-events-none">
-        <div className="w-full max-w-5xl pointer-events-auto shadow-2xl rounded-md transition-transform  duration-300">
+        <motion.div
+          animate={isPinging ? {
+            scale: [3, 2, 1, 1, 1.1, 0.95, 1],
+            y: [0, -80, 40, -40, 20, -10, 5, 0],
+
+            boxShadow: [
+              "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+              "0 70px 110px -12px rgba(18, 49, 73, 0.9)",
+              "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+            ]
+          } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full max-w-5xl pointer-events-auto shadow-2xl rounded-md transition-transform duration-300"
+        >
           {!drawerOpen && bookingFormContent}
-        </div>
+        </motion.div>
       </div>
 
       {/* ========== MOBILE: Sticky button (visible on mobile only) ========== */}

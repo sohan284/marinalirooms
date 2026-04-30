@@ -8,6 +8,10 @@ import MapSection from './MapSection';
 
 const yellowtail = Yellowtail({ weight: "400", subsets: ["latin"] });
 
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
+import PrivacyPolicyContent from '@/components/common/PrivacyPolicyContent';
+import CookiePolicyContent from '@/components/common/CookiePolicyContent';
+
 // MapComponent is now handled by MapSection
 
 const staticContent = {
@@ -66,6 +70,7 @@ const staticContent = {
 
 interface FooterProps {
   lang: 'en' | 'it' | 'de';
+  infoTitle?: string;
   address?: string;
   phone?: string;
   email?: string;
@@ -76,9 +81,10 @@ interface FooterProps {
   bottomLinks?: any[];
 }
 
-export default function Footer({ lang, address, phone, email, whatsapp, mapUrl, copyright, columns, bottomLinks }: FooterProps) {
+export default function Footer({ lang, infoTitle, address, phone, email, whatsapp, mapUrl, copyright, columns, bottomLinks }: FooterProps) {
   const t = staticContent[lang] || staticContent.en;
 
+  const displayInfoTitle = infoTitle || t.infoTitle;
   const displayAddress = address || t.address;
   const displayPhone = phone || t.phone;
   const displayEmail = email || t.email;
@@ -98,13 +104,13 @@ export default function Footer({ lang, address, phone, email, whatsapp, mapUrl, 
       {/* Main Content Grid */}
       <section className="grid lg:grid-cols-2">
         {/* Left Side: Centered Contact Info */}
-        <div id="contact" 
+        <div id="contact"
           className="p-8 md:p-16 flex flex-col items-center justify-center text-center text-primary"
           style={{ backgroundColor: 'var(--background)' }}
         >
           <div className="max-w-xl w-full">
             <span className="text-xl lg:text-2xl tracking-[0.3em] font-bold text-primary mb-8 block uppercase">
-              {t.infoTitle}
+              {displayInfoTitle}
             </span>
 
             <div className="space-y-6 text-base font-medium">
@@ -163,7 +169,7 @@ export default function Footer({ lang, address, phone, email, whatsapp, mapUrl, 
       {/* Navigation Footer for Contact */}
       <div className="pt-10 pb-36 px-4 text-center mt-auto" style={{ backgroundColor: 'var(--primary-color)' }}>
         <Link href={`/${lang}`} className="relative z-10 flex flex-col items-center justify-center text-background my-8 group cursor-pointer hover:opacity-80 transition-opacity">
-          <h1 className={`${yellowtail.className} text-4xl md:text-5xl tracking-wide mb-1 group-hover:scale-105 transition-transform duration-500`}>
+          <h1 className={`${yellowtail.className} text-4xl md:text-5xl tracking-wide mb-1  transition-transform duration-500`}>
             Marinali
           </h1>
           <div className="flex items-center gap-3 mt-1">
@@ -180,8 +186,24 @@ export default function Footer({ lang, address, phone, email, whatsapp, mapUrl, 
         {/* Bottom copyright info preserved from original footer */}
         <div className="max-w-4xl mx-auto border-t border-white/20 pt-6 text-xs font-mono opacity-80 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex gap-4">
-            <Link href={`/${lang}/privacy-policy`} className="hover:underline">{t.privacy}</Link>
-            <Link href={`/${lang}/cookie-policy`} className="hover:underline">{t.cookie}</Link>
+            <Dialog>
+              <DialogTrigger className="hover:underline text-left cursor-pointer">{t.privacy}</DialogTrigger>
+              <DialogContent className="max-w-4xl w-[90vw] max-h-[85vh] flex flex-col bg-background p-0 border-none rounded-xl">
+                <DialogTitle className="sr-only">{t.privacy}</DialogTitle>
+                <div className="flex-1 overflow-y-auto min-h-0 rounded-xl relative" data-lenis-prevent="true">
+                  <PrivacyPolicyContent lang={lang} />
+                </div>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger className="hover:underline text-left cursor-pointer">{t.cookie}</DialogTrigger>
+              <DialogContent className="max-w-4xl w-[90vw] max-h-[85vh] flex flex-col bg-background p-0 border-none rounded-xl">
+                <DialogTitle className="sr-only">{t.cookie}</DialogTitle>
+                <div className="flex-1 overflow-y-auto min-h-0 rounded-xl relative" data-lenis-prevent="true">
+                  <CookiePolicyContent lang={lang} />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
           <div>{displayCopyright}</div>
         </div>

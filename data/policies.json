@@ -1,0 +1,81 @@
+{
+  "privacy": {
+    "en": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: April 2026",
+      "sections": [
+        { "title": "1. Data Controller", "content": "<strong>Marinali Rooms</strong><br />Address: Via O. Marinali, 13 - 36061 Bassano del Grappa (Italy)<br />Email: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a>" },
+        { "title": "2. Types of Data Collected", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Data provided voluntarily:</strong> name, surname, email, phone number, credit card details (via Krossbooking), special requests.</li><li><strong>Browsing data:</strong> anonymized IP, browser type, pages visited.</li><li><strong>Cookies:</strong> only technical cookies for Krossbooking – see Cookie Policy.</li></ul>" },
+        { "title": "3. Purposes and Legal Basis", "content": "<h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Contract execution (Art. 6(1)(b) GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Booking and stay management</li><li>Booking-related communications</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Legal obligations (Art. 6(1)(c) GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Guest data communication to Police Headquarters (art. 109 R.D. 773/1931)</li><li>Tax and accounting obligations (10 years retention)</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Consent (Art. 6(1)(a) GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Newsletters and marketing communications</li><li>Saving preferences for future bookings</li></ul>" },
+        { "title": "4. Data Recipients", "content": "<p>Krossbooking, Police Headquarters, Municipality, ISTAT, Region, tax/legal consultants, judicial authorities.</p>" },
+        { "title": "5. Retention Periods", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li>Tax data: 10 years</li><li>Police reporting receipts: 5 years</li><li>Marketing: until consent withdrawal (max 24 months)</li></ul>" },
+        { "title": "6. Data Subject Rights (Arts. 15-22 GDPR)", "content": "<p>Access, rectification, erasure, restriction, data portability, objection, withdraw consent, lodge a complaint with the supervisory authority (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.garanteprivacy.it</a>).</p>" },
+        { "title": "7. Contact", "content": "<p>Email: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    },
+    "it": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Ultimo aggiornamento: Aprile 2026",
+      "sections": [
+        { "title": "1. Titolare del trattamento", "content": "<strong>Marinali Rooms</strong><br />Indirizzo: Via O. Marinali, 13 - 36061 Bassano del Grappa (Italy)<br />Email: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a>" },
+        { "title": "2. Tipologie di dati raccolti", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Dati forniti volontariamente:</strong> nome, cognome, email, telefono, dati carta di credito (tramite Krossbooking), richieste speciali.</li><li><strong>Dati di navigazione:</strong> IP anonimizzato, browser, pagine visitate.</li><li><strong>Cookie:</strong> solo cookie tecnici Krossbooking – vedi Cookie Policy.</li></ul>" },
+        { "title": "3. Finalità e base giuridica", "content": "<h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Esecuzione del contratto (Art. 6 par. 1 lett. b GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Gestione prenotazioni e soggiorni</li><li>Comunicazioni relative alla prenotazione</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Obblighi legali (Art. 6 par. 1 lett. c GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Comunicazione dati alla Questura (art. 109 R.D. 773/1931)</li><li>Adempimenti fiscali e contabili (10 anni)</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Consenso (Art. 6 par. 1 lett. a GDPR):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Newsletter e comunicazioni commerciali</li><li>Salvataggio preferenze per future prenotazioni</li></ul>" },
+        { "title": "4. Destinatari dei dati", "content": "<p>Krossbooking, Questura, Comune, ISTAT, Regione, consulenti commercialisti/fiscali, autorità giudiziarie.</p>" },
+        { "title": "5. Periodo di conservazione", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li>Dati fiscali: 10 anni</li><li>Ricevute Alloggiati Web: 5 anni</li><li>Marketing: fino a revoca consenso (max 24 months)</li></ul>" },
+        { "title": "6. Diritti dell'interessato (Artt. 15-22 GDPR)", "content": "<p>Accesso, rettifica, cancellazione, limitazione, portabilità, opposizione, revoca consenso, reclamo al Garante Privacy (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.garanteprivacy.it</a>).</p>" },
+        { "title": "7. Contatti", "content": "<p>Email: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    },
+    "de": {
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Letzte Aktualisierung: April 2026",
+      "sections": [
+        { "title": "1. Verantwortlicher", "content": "<strong>Marinali Rooms</strong><br />Adresse: Via O. Marinali, 13 - 36061 Bassano del Grappa (Italy)<br />E-Mail: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a>" },
+        { "title": "2. Arten der erhobenen Daten", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Freiwillig bereitgestellte Daten:</strong> Name, Vorname, E-Mail, Telefonnummer, Kreditkartendaten (über Krossbooking), Sonderwünsche.</li><li><strong>Navigationsdaten:</strong> anonymisierte IP, Browsertyp, besuchte Seiten.</li><li><strong>Cookies:</strong> nur technische Cookies für Krossbooking – siehe Cookie-Richtlinie.</li></ul>" },
+        { "title": "3. Zwecke und Rechtsgrundlagen", "content": "<h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Buchungs- und Aufenthaltsverwaltung</li><li>Buchungsbezogene Kommunikation</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Rechtliche Verpflichtungen (Art. 6 Abs. 1 lit. c DSGVO):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Meldung der Gästedaten an die Polizeibehörden (Art. 109 R.D. 773/1931)</li><li>Steuerliche und buchhalterische Pflichten (10 Jahre Aufbewahrung)</li></ul><h3 class=\"text-xl font-bold text-primary mt-6 mb-2\">Einwilligung (Art. 6 Abs. 1 lit. a DSGVO):</h3><ul class=\"list-disc pl-6 space-y-2\"><li>Newsletter und Werbekommunikation</li><li>Speicherung von Präferenzen für zukünftige Buchungen</li></ul>" },
+        { "title": "4. Datenempfänger", "content": "<p>Krossbooking, Polizeibehörden, Gemeinde, ISTAT, Region, Steuer-/Rechtsberater, Justizbehörden.</p>" },
+        { "title": "5. Aufbewahrungsfristen", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li>Steuerdaten: 10 Jahre</li><li>Meldebelege Polizei: 5 Jahre</li><li>Marketing: bis zum Widerruf der Einwilligung (max. 24 Monate)</li></ul>" },
+        { "title": "6. Rechte der betroffenen Person (Art. 15-22 DSGVO)", "content": "<p>Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch, Widerruf der Einwilligung, Beschwerde bei der Aufsichtsbehörde (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.garanteprivacy.it</a>).</p>" },
+        { "title": "7. Kontakt", "content": "<p>E-Mail: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    }
+  },
+  "cookie": {
+    "en": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: April 2026",
+      "intro": "<p>This website uses only technical cookies strictly necessary for the Krossbooking booking widget to function properly.</p>",
+      "sections": [
+        { "title": "Which cookies do we use?", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Session cookies:</strong> keep your booking active while you navigate the site.</li><li><strong>Preference cookies:</strong> remember your selected language and currency during the booking process.</li></ul><p class=\"mt-6\">No profiling, marketing or tracking cookies are used by our site or the Krossbooking widget.</p>" },
+        { "title": "How to manage or disable cookies", "content": "<p>You can control, limit or delete cookies through your browser settings (Chrome, Firefox, Safari, Edge, etc.).</p><p class=\"font-semibold italic text-primary mt-4\">Please note: disabling technical cookies may break the room booking form.</p>" },
+        { "title": "Third-party data processing", "content": "<p>Bookings are handled by Krossbooking. For information on how your personal data is processed, please read Krossbooking's official privacy policy: <a href=\"https://www.krossbooking.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.krossbooking.com/privacy</a></p>" },
+        { "title": "Changes to this Cookie Policy", "content": "<p>Any updates will be posted on this page. We recommend checking it occasionally.</p>" },
+        { "title": "Contact", "content": "<p>For questions about cookies or data processing: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    },
+    "it": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Ultimo aggiornamento: Aprile 2026",
+      "intro": "<p>Questo sito web utilizza esclusivamente cookie tecnici necessari al funzionamento del widget di prenotazione Krossbooking.</p>",
+      "sections": [
+        { "title": "Quali cookie vengono utilizzati?", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Cookie di sessione:</strong> mantengono attiva la prenotazione mentre navighi tra le pagine.</li><li><strong>Cookie di preferenza:</strong> ricordano la lingua e la valuta selezionate durante il processo di prenotazione.</li></ul><p class=\"mt-6\">Nessun cookie di profilazione, marketing o tracciamento viene utilizzato dal nostro sito o dal widget Krossbooking.</p>" },
+        { "title": "Come gestire o disabilitare i cookie", "content": "<p>Puoi controllare, limitare o cancellare i cookie direttamente dalle impostazioni del tuo browser (Chrome, Firefox, Safari, Edge, ecc.).</p><p class=\"font-semibold italic text-primary mt-4\">Attenzione: la disabilitazione dei cookie tecnici potrebbe impedire il corretto funzionamento del modulo di prenotazione delle camere.</p>" },
+        { "title": "Dati e servizi di terze parti", "content": "<p>Le prenotazioni sono gestite tramite la piattaforma Krossbooking. Per informazioni sul trattamento dei tuoi dati personali, consulta la privacy policy ufficiale di Krossbooking: <a href=\"https://www.krossbooking.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.krossbooking.com/privacy</a></p>" },
+        { "title": "Modifiche alla presente Cookie Policy", "content": "<p>Eventuali aggiornamenti verranno pubblicati su questa stessa pagina. Ti invitiamo a consultarla periodicamente.</p>" },
+        { "title": "Contatti", "content": "<p>Per domande relative all'uso dei cookie o al trattamento dei tuoi dati: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    },
+    "de": {
+      "title": "Cookie-Richtlinie",
+      "lastUpdated": "Letzte Aktualisierung: April 2026",
+      "intro": "<p>Diese Website verwendet ausschließlich technisch notwendige Cookies für das Krossbooking-Buchungs-Widget.</p>",
+      "sections": [
+        { "title": "Welche Cookies werden verwendet?", "content": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Sitzungs-Cookies:</strong> halten die Buchung aktiv, während Sie auf der Website navigieren.</li><li><strong>Präferenz-Cookies:</strong> speichern Ihre ausgewählte Sprache und Währung während des Buchungsvorgangs.</li></ul><p class=\"mt-6\">Es werden keine Profiling-, Marketing- oder Tracking-Cookies von unserer Website oder dem Krossbooking-Widget verwendet.</p>" },
+        { "title": "Cookies verwalten oder deaktivieren", "content": "<p>Sie können Cookies in den Einstellungen Ihres Browsers kontrollieren, einschränken oder löschen (Chrome, Firefox, Safari, Edge usw.).</p><p class=\"font-semibold italic text-primary mt-4\">Wichtig: Wenn Sie technische Cookies deaktivieren, funktioniert das Buchungsformular möglicherweise nicht richtig.</p>" },
+        { "title": "Datenverarbeitung durch Dritte", "content": "<p>Buchungen werden über Krossbooking abgewickelt. Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden Sie in der offiziellen Datenschutzerklärung von Krossbooking: <a href=\"https://www.krossbooking.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-primary transition-colors\">https://www.krossbooking.com/privacy</a></p>" },
+        { "title": "Änderungen dieser Cookie-Richtlinie", "content": "<p>Alle Aktualisierungen werden auf dieser Seite veröffentlicht. Bitte schauen Sie gelegentlich vorbei.</p>" },
+        { "title": "Kontakt", "content": "<p>Bei Fragen zu Cookies oder zur Datenverarbeitung: <a href=\"mailto:welcome@marinalirooms.com\" class=\"underline hover:text-primary transition-colors\">welcome@marinalirooms.com</a></p>" }
+      ]
+    }
+  }
+}

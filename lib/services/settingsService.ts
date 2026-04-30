@@ -18,6 +18,7 @@ export interface FooterSocialLink {
 }
 
 export interface FooterConfig {
+  infoTitle?: string;
   columns: FooterColumn[];
   socialLinks: FooterSocialLink[];
   copyright: string;

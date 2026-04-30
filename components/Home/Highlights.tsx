@@ -147,8 +147,13 @@ export default function Highlights({ lang, data, isEditable = false }: { lang: s
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    const successUrl = `${window.location.origin}/${lang}/thank-you`;
-                    window.open(`https://marinalirooms.kross.travel/book/step1?lang=${lang}&url_back=${encodeURIComponent(successUrl)}`, '_blank');
+                    if (typeof window !== 'undefined') {
+                      if (window.innerWidth < 1024) {
+                        window.dispatchEvent(new CustomEvent('open-booking-drawer'));
+                      } else {
+                        window.dispatchEvent(new CustomEvent('ping-booking-bar'));
+                      }
+                    }
                   }}
                   style={{
                     padding: '12px 24px',

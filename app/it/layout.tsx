@@ -23,6 +23,7 @@ export default async function ItalianLayout({ children }: { children: React.Reac
       <BookingBar data={data} lang="it" />
       <Footer 
         lang="it" 
+        infoTitle={footerConfig?.infoTitle}
         address={footerConfig?.address}
         phone={footerConfig?.phone}
         email={footerConfig?.email}

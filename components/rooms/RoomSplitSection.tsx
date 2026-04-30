@@ -193,7 +193,7 @@ export default function RoomSplitSection({ room, reverse = false, lang, priority
 
               {/* Image Area */}
               <div
-                className="w-full lg:w-[50%] h-[450px] sm:h-[550px] lg:h-full flex flex-col shrink-0"
+                className="w-full lg:w-[50%] h-[350px] sm:h-[450px] lg:h-full flex flex-col shrink-0"
                 style={{ backgroundColor: 'var(--background)' }}
               >
                 <div className="flex-1 relative min-h-0">
@@ -212,7 +212,7 @@ export default function RoomSplitSection({ room, reverse = false, lang, priority
                   >
                     {allImages.map((img, idx) => (
                       <SwiperSlide key={idx} className="flex items-center justify-center w-full h-full">
-                        <div className="relative w-full h-full p-4 lg:p-10">
+                        <div className="relative w-full h-full p-2 sm:p-4 lg:p-10">
                           <Image
                             src={img}
                             alt={`${room.name} — ${idx + 1}`}
@@ -271,7 +271,7 @@ export default function RoomSplitSection({ room, reverse = false, lang, priority
 
               {/* Content Area */}
               <div
-                className="w-full lg:w-[50%] flex-1 lg:h-full overflow-y-auto px-8 lg:px-12 py-12 lg:py-16 flex flex-col border-l border-gray-100 font-sans"
+                className="w-full lg:w-[50%] flex-1 lg:h-full overflow-y-auto px-5 py-6 sm:px-8 sm:py-10 lg:px-12 lg:py-16 flex flex-col border-t lg:border-t-0 lg:border-l border-gray-100 font-sans"
                 data-lenis-prevent
                 style={{ backgroundColor: 'var(--background)' }}
               >
